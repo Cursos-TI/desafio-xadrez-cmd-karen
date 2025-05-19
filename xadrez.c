@@ -1,34 +1,82 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    printf ("Desafio Xadrez! \n");
-    printf ("Novo commit \n");
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    // Declaração das variáveis da primeira carta
+    char estado1;
+    char codigo1[10];
+    char nomeCidade1[50];
+    int populacao1;
+    float areaKm2_1;
+    float pib1;
+    int pontosTuristicos1;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Declaração das variáveis da segunda carta
+    char estado2;
+    char codigo2[10];
+    char nomeCidade2[50];
+    int populacao2;
+    float areaKm2_2;
+    float pib2;
+    int pontosTuristicos2;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    // === Entrada dos dados da primeira carta ===
+    printf("=== Dados da primeira carta ===\n");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    printf("Nome do Estado:");
+    scanf("%s", &estado1);
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("Código da carta:");
+    scanf("%s", codigo1);
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    printf("Nome da cidade:");
+    scanf("%s", nomeCidade1);
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    printf("População:");
+    scanf("%d", &populacao1);
+
+    printf("Área em km²:");
+    scanf("%f", &areaKm2_1);
+
+    printf("PIB:");
+    scanf("%f", &pib1);
+
+    printf("Número de pontos turísticos:");
+    scanf("%d", &pontosTuristicos1);
+
+    // === Entrada dos dados da segunda carta ===
+    printf("\n=== Dados da segunda carta ===\n");
+
+    printf("Nome do Estado:");
+    scanf(" %s", &estado2);
+
+    printf("Código da carta:");
+    scanf(" %s", codigo2);
+
+    printf("Nome da cidade:");
+    scanf("%s", nomeCidade2);
+
+    printf("População:");
+    scanf("%d", &populacao2);
+
+    printf("Área em km²:");
+    scanf("%f", &areaKm2_2);
+
+    printf("PIB:");
+    scanf("%f", &pib2);
+
+    printf("Número de pontos turísticos:");
+    scanf("%d", &pontosTuristicos2);
+
+    // === Exibindo os dados das cartas ===
+    printf("\n===== Carta 1 =====\n");
+    printf("Código: %s | Cidade: %s | Estado: %s\n", codigo1, nomeCidade1, estado1);
+    printf("População: %d | Área: %.2f km² | PIB: %.2f bi | Pontos turísticos: %d\n\n",
+           populacao1, areaKm2_1, pib1, pontosTuristicos1);
+
+    printf("===== Carta 2 =====\n");
+    printf("Código: %s | Cidade: %s | Estado: %s\n", codigo2, nomeCidade2, estado2);
+    printf("População: %d | Área: %.2f km² | PIB: %.2f bi | Pontos turísticos: %d\n",
+           populacao2, areaKm2_2, pib2, pontosTuristicos2);
 
     return 0;
 }
