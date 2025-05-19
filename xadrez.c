@@ -6,6 +6,7 @@
 
 int main() {
     printf ("Desafio Xadrez! \n");
+    printf ("Novo commit \n");
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
